@@ -10,7 +10,7 @@ app.use(express.json());
 require('dotenv').config();
 
 app.get('/', async (req: Request, res: Response) => {
-  return res.send({ error: false, v: 6, jwt: process.env.jwtSecret });
+  return res.send({ error: false, v: 7, jwt: process.env.jwtSecret });
 });
 
 const server = app.listen(process.env.PORT || 8080);
