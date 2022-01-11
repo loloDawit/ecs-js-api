@@ -10,7 +10,7 @@ app.use(express.json());
 require('dotenv').config();
 
 app.get('/', async (req: Request, res: Response) => {
-  return res.send({ error: false, v: 8, jwt: process.env.jwtSecret });
+  return res.send({ message: "api working", v: 9, jwt: process.env.jwtSecret });
 });
 
 const server = app.listen(process.env.PORT || 8080);

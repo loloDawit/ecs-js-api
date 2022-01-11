@@ -69,7 +69,7 @@ Resources:
     Properties:
       Family: aws-ecs-typescript-task
       Cpu: 256
-      Memory: 512
+      Memory: '512'
       NetworkMode: awsvpc
       ExecutionRoleArn: !Ref ExecutionRole
       TaskRoleArn: !Ref TaskRole
